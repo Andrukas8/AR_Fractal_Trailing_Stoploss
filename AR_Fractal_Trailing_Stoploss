@@ -50,10 +50,13 @@ void OnTick()
         }               
                 
         string text;
-        text += "EA TIMEFRAME => " + TimeFrame + "\n";         
-        text += "Current Upper Fractal => " + mainUpper + "\n";
-        text += "Current Lower Fractal => " + mainLower + "\n";
-        text += "Positions total => " + totalPos;        
+        text += "\n";
+        text += " FRACTAL TRAILING STOPLOSS EA parameters\n";
+        text += " EA TIMEFRAME => " + TimeFrame + "\n";
+        text += " Offset points => " + TslOffsetPoints + "\n";        
+        text += " Current Upper Fractal => " + mainUpper + "\n";
+        text += " Current Lower Fractal => " + mainLower + "\n";
+        text += " Positions total => " + totalPos;        
                 
    // Changing the SL based on the Fractal
     for(int i=0;i<totalPos;i++)
